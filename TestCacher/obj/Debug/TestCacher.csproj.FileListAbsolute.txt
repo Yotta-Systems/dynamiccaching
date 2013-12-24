@@ -1,0 +1,8 @@
+c:\Users\armand.comprsa\documents\visual studio 2012\Projects\Caching\TestCacher\bin\Debug\TestCacher.exe.config
+c:\Users\armand.comprsa\documents\visual studio 2012\Projects\Caching\TestCacher\bin\Debug\TestCacher.exe
+c:\Users\armand.comprsa\documents\visual studio 2012\Projects\Caching\TestCacher\bin\Debug\TestCacher.pdb
+c:\Users\armand.comprsa\documents\visual studio 2012\Projects\Caching\TestCacher\bin\Debug\Caching.dll
+c:\Users\armand.comprsa\documents\visual studio 2012\Projects\Caching\TestCacher\bin\Debug\Caching.pdb
+c:\Users\armand.comprsa\documents\visual studio 2012\Projects\Caching\TestCacher\obj\Debug\TestCacher.csprojResolveAssemblyReference.cache
+c:\Users\armand.comprsa\documents\visual studio 2012\Projects\Caching\TestCacher\obj\Debug\TestCacher.exe
+c:\Users\armand.comprsa\documents\visual studio 2012\Projects\Caching\TestCacher\obj\Debug\TestCacher.pdb
