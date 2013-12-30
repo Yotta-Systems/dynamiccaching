@@ -12,13 +12,13 @@ namespace Yotta.Caching
         Default,
         NotRemovable
     }
-    public delegate Object Function(dynamic list);
+    public delegate R Function<R>(dynamic list);
     public abstract class BaseCacher
     {
         protected abstract void AddToMyCache(String CacheKeyName, Object CacheItem, CacherPriority Priority);
         protected abstract Object GetChaceItem(String CacheKeyName);
         protected abstract void RemoveCacheItem(String CacheKeyName);
-        public Object Invoke(Function theFunction, dynamic list)
+        public T Invoke<T>(Function<T> theFunction, dynamic list)
         {
             String key = theFunction.ToString() + new JavaScriptSerializer().Serialize(list);
 
@@ -30,7 +30,7 @@ namespace Yotta.Caching
                 this.AddToMyCache(key, result, CacherPriority.Default);
             }
 
-            return result;
+            return (T) Convert.ChangeType(result, typeof(T));
         }
     }
 }

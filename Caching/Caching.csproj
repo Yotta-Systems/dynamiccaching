@@ -43,7 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Implementation\BaseCacher.cs" />
-    <Compile Include="Implementation\BasicCacher.cs" />
+    <Compile Include="Implementation\MemoryCache.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
