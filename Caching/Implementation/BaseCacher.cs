@@ -27,10 +27,27 @@ namespace Yotta.Caching
             if (result == null)
             {
                 result = theFunction(list);
+
+                if (result == null)
+                {
+                    return default(T);
+                }
                 this.AddToMyCache(key, result, CacherPriority.Default);
             }
 
-            return (T) Convert.ChangeType(result, typeof(T));
+            var t = typeof(T);
+
+            if (t.IsGenericType && t.GetGenericTypeDefinition().Equals(typeof(Nullable<>)))
+            {
+                if (result == null)
+                {
+                    return default(T);
+                }
+
+                t = Nullable.GetUnderlyingType(t);
+            }
+
+            return (T)Convert.ChangeType(result, t);
         }
     }
 }
